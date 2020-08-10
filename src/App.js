@@ -14,11 +14,11 @@ function App() {
     <Router>
         <Layout>
           <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/about" component={About} />
-            <Route path="/services" component={Services} />
-            <Route exact path="/mission" component={Mission} />
-            <Route exact path="/contact" component={Contact} />
+            <Route exact path={["/", "/R-Projects/"]} component={Home} />
+            <Route exact path={["/about", "/R-Projects/about"]} component={About} />
+            <Route exact path={["/services", "/R-Projects/services"]} component={Services} />
+            <Route exact path={["/mission", "/R-Projects/mission"]} component={Mission} />
+            <Route exact path={["/contact", "/R-Projects/contact"]} component={Contact} />
           </Switch>
         </Layout>
     </Router>
