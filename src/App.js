@@ -11,14 +11,14 @@ import Contact from "./components/contact";
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
         <Layout>
           <Switch>
-            <Route exact path={process.env.PUBLIC_URL + "/"} component={Home} />
-            <Route exact path={process.env.PUBLIC_URL + "/about"} component={About} />
-            <Route exact path={process.env.PUBLIC_URL + "/services"} component={Services} />
-            <Route exact path={process.env.PUBLIC_URL + "/mission"} component={Mission} />
-            <Route exact path={process.env.PUBLIC_URL + "/contact"} component={Contact} />
+            <Route exact path="/" component={Home} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/services" component={Services} />
+            <Route exact path="/mission" component={Mission} />
+            <Route exact path="/contact" component={Contact} />
           </Switch>
         </Layout>
     </Router>
