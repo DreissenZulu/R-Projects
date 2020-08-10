@@ -12,13 +12,13 @@ function NavBar() {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="ml-auto">
-                    <Nav.Link href="/about" className="nav-item nav-link" activeClassName="active">ABOUT R</Nav.Link>
+                    <Link to="/about" className="nav-item nav-link" activeClassName="active">ABOUT R</Link>
 
-                    <Nav.Link href="/services" className="nav-item nav-link" activeClassName="active">R SERVICES</Nav.Link>
+                    <Link to="/services" className="nav-item nav-link" activeClassName="active">R SERVICES</Link>
 
-                    <Nav.Link href="/mission" className="nav-item nav-link" activeClassName="active">R MISSION</Nav.Link>
+                    <Link to="/mission" className="nav-item nav-link" activeClassName="active">R MISSION</Link>
 
-                    <Nav.Link href="/contact" className="nav-item nav-link" activeClassName="active">CONTACT</Nav.Link>
+                    <Link to="/contact" className="nav-item nav-link" activeClassName="active">CONTACT</Link>
 
                 </Nav>
                 </Navbar.Collapse>
