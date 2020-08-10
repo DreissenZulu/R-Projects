@@ -14,11 +14,11 @@ function App() {
     <Router>
         <Layout>
           <Switch>
-            <Route exact path={["/", "/R-Projects/"]} component={Home} />
-            <Route exact path={["/about", "/R-Projects/about"]} component={About} />
-            <Route exact path={["/services", "/R-Projects/services"]} component={Services} />
-            <Route exact path={["/mission", "/R-Projects/mission"]} component={Mission} />
-            <Route exact path={["/contact", "/R-Projects/contact"]} component={Contact} />
+            <Route exact path={process.env.PUBLIC_URL + "/"} component={Home} />
+            <Route exact path={process.env.PUBLIC_URL + "/about"} component={About} />
+            <Route exact path={process.env.PUBLIC_URL + "/services"} component={Services} />
+            <Route exact path={process.env.PUBLIC_URL + "/mission"} component={Mission} />
+            <Route exact path={process.env.PUBLIC_URL + "/contact"} component={Contact} />
           </Switch>
         </Layout>
     </Router>
