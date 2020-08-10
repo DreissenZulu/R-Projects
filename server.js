@@ -13,9 +13,9 @@ app.use(express.json());
 
 // Use the files in the client build folder. Necessary for the React frontend
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"))
+  app.use(express.static("Client/build"))
 } else {
-  app.use(express.static(path.join(__dirname, "./client/build/")))
+  app.use(express.static(path.join(__dirname, "./Client/build/")))
 }
 
 router.get("/", (req, res) => {
