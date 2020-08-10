@@ -11,7 +11,7 @@ import Contact from "./components/contact";
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
         <Layout>
           <Switch>
             <Route exact path="/" component={Home} />
