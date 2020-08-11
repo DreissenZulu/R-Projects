@@ -12,7 +12,7 @@ function Contact() {
                         height="450"
                         frameborder="0"
                         style={{border: "0", marginBottom: "75px"}}
-                        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJs0-pQ_FzhlQRi_OBm-qWkbs&key=AIzaSyAve53vYSfEDXXDOFkQr7tTtYeKx5krGH4"
+                        src={`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJs0-pQ_FzhlQRi_OBm-qWkbs&key=${process.env.REACT_APP_MAP_KEY}`}
                         allowfullscreen>
                     </iframe> 
                     </Col>
